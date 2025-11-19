@@ -56,7 +56,7 @@ function Layout({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/frontend-kallma-resort'>
       <AuthProvider>
         <Layout>
           <Routes>
