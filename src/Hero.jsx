@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import LogoKallma from '/src/assets/icono-kallma-blanco.svg';
+import Fondo from './assets/fondo.jpg';
 import './index.css';
 import { Wind } from "lucide-react";
 import Snowfall from "./components/Snowfall";
@@ -24,7 +25,7 @@ export default function Hero() {
   return (
     <section
       className="h-screen bg-cover bg-center relative font-kallma"
-      style={{ backgroundImage: "url('/src/assets/fondo.jpg')" }}
+      style={{ backgroundImage: `url(${Fondo})` }}
     >
       {/* Animación de nieve */}
       <Snowfall />
@@ -123,6 +124,5 @@ export default function Hero() {
     </section>
   );
 }
-
 
 
